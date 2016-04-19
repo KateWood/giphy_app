@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KateWood/giphy_app#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "request": "^2.72.0"
   }
 }
