@@ -1,16 +1,18 @@
-var express = require('express'),
-	app		= express(),
-	port 	= process.env.PORT || 3000
-
+var express = require('express');
+var request = require('request');
+var app	= express();
+var port = process.env.PORT || 3000;
+var giphyRoutes = require('./routes/giphy.js');
+var redditRoutes = require('./routes/reddit.js');
 
 app.get('/', function(req, res) {
-    res.json({message: "Welcome to my app!"})
-})
+    res.json({message: "Welcome to my app!"});
+});
 
-var giphyRoutes = require('./routes/giphy.js')
+app.use('/giphy', giphyRoutes);
 
-app.use('/giphy', giphyRoutes)
+app.use('/reddit', redditRoutes);
 
-app.listen(port, function() {
-    console.log("Server is running on", port)
-})
+app.listen(port, function(){
+	console.log('Server listening on port ' + port);
+});
