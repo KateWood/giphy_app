@@ -1,0 +1,22 @@
+{
+  "name": "giphy_app",
+  "version": "1.0.0",
+  "description": "Consuming 3P APIs Lesson",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KateWood/giphy_app.git"
+  },
+  "author": "Kate Wood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KateWood/giphy_app/issues"
+  },
+  "homepage": "https://github.com/KateWood/giphy_app#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
